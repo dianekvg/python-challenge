@@ -23,14 +23,14 @@ input_files_dict = {}
 ask = "Y"
 filenum = 0
 
-print ("===========================================================================================================================")
+print ("=========================================================================================================================")
 while ask == "Y" or ask == "y":
     filename = input("What is the name (with extension) of the file in the 'rawdata' folder that you would like to format?  ")
     input_files_dict ["emp"+str(filenum)+"_csv"] = filename
     filenum = filenum + 1
     ask = input("Your file ("+filename+") has been added.  Do you have another file that needs to be formatted? Y/N:  ")
 print ("Your "+str(filenum)+" file(s) have been formatted and exported to EmployeeData.csv in the 'finaloutput' folder.")
-print ("===========================================================================================================================")
+print ("=========================================================================================================================")
 
 counter = 0
 filelist = [list(input_files_dict)]
